@@ -1,0 +1,33 @@
+{
+  "name": "asciinun",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "clean": "rimraf ./dist",
+    "format": "prettier --write .",
+    "lint": "eslint . --max-warnings 0 --report-unused-disable-directives",
+    "lint:fix": "yarn lint --fix",
+    "start": "yarn build && node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.4",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.3.0",
+    "tsc-alias": "^1.8.2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "asciidoctor": "^2.2.6",
+    "commander": "^10.0.0"
+  }
+}
