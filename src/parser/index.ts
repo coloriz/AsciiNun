@@ -1,0 +1,1 @@
+export { objectToConfig } from "./frontmatter";
